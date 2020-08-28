@@ -20,6 +20,7 @@ public class AnalysisReporting {
 		Date today = Calendar.getInstance().getTime();
 		String date = dateFormat.format(today);
 		
+		
 		System.setProperty("webdriver.chrome.driver", "/Users/sneupane/Documents/work/chromedriver");
 		WebDriver driver =new ChromeDriver();
 		driver.manage().window().maximize();
@@ -73,13 +74,21 @@ public class AnalysisReporting {
 		driver.findElement(By.id("btnExecute")).click();
 		Thread.sleep(3000);
 		Assert.assertEquals(driver.findElement(By.xpath("//div[@class='left']")).getText(), "Results");
-		driver.close();
+		driver.findElement(By.xpath("//span[contains(text(),'Monthly Reports')]")).click();
 		
 		//Weekly Reports
 		driver.findElement(By.xpath("//span[contains(text(),'Weekly Reports')]")).click();
-		jse.executeScript("arguments[0].scrollTop = arguments[1];",scrollArea, 250); //Scroll down only specific div
+		jse.executeScript("arguments[0].scrollIntoView = arguments[1];",scrollArea, 250); //Scroll down only specific div
+		jse.executeScript("window.scrollBy(0,250)"); //Scroll window down
 		driver.findElement(By.xpath("//a[contains(text(),'Weekly Trial Counts')]")).click();
 		driver.findElement(By.xpath("//input[@id='parameters_0__Value']")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//input[@id='parameters_0__Value']")).sendKeys("08/28/2020");
+		driver.findElement(By.xpath("//input[@id='parameters_0__Value']")).sendKeys(Keys.ENTER);
+		driver.findElement(By.id("btnExecute")).click();
+		Thread.sleep(2000);
+		
+		driver.close();
 
 	}
 
