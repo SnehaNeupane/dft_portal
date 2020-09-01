@@ -1,3 +1,5 @@
+package Students;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -83,8 +85,8 @@ public class AnalysisReporting {
 		driver.findElement(By.xpath("//a[contains(text(),'Weekly Trial Counts')]")).click();
 		driver.findElement(By.xpath("//input[@id='parameters_0__Value']")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//input[@id='parameters_0__Value']")).sendKeys("08/28/2020");
-		driver.findElement(By.xpath("//input[@id='parameters_0__Value']")).sendKeys(Keys.ENTER);
+		driver.findElement(By.xpath("/html[1]/body[1]/div[5]/div[4]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/form[1]/input[2]")).sendKeys("08/28/2020");
+		driver.findElement(By.xpath("/html[1]/body[1]/div[5]/div[4]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/div[1]/form[1]/input[2]")).sendKeys(Keys.ENTER);
 		driver.findElement(By.id("btnExecute")).click();
 		Thread.sleep(2000);
 		
