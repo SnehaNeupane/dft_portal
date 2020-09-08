@@ -2,15 +2,26 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
+    <groups>
+      <run>
+        <exclude name="IgnoreForCertainTime"/>
+      </run>
+    </groups>
     <classes>
       <class name="Students.SkillsAcquisition">
         <methods>
-          <include name="addTarget"/>
-          <include name="addSkills"/>
+          <include name="setUp"/>
           <include name="terminateBrowser"/>
-          <include name="launchBrowser"/>
+          <include name="login"/>
         </methods>
       </class> <!-- Students.SkillsAcquisition -->
+      <class name="Students.BehaviorReduction">
+        <methods>
+          <include name="setUp"/>
+          <include name="behaviourReduction"/>
+          <include name="terminateBrowser"/>
+        </methods>
+      </class> <!-- Students.BehaviorReduction -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

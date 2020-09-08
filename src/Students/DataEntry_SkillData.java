@@ -6,6 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -38,22 +39,23 @@ public class DataEntry_SkillData extends BaseTest{
 		universalsetting.selectByVisibleText("Neupane, Sneha");
 		Thread.sleep(2000);
 		//Assert.assertEquals(actual, expected);
-		driver.findElement(By.xpath("//*[@id=\"enteredData\"]/thead/tr/th[1]/div[1]/button[1]/span")).click();
+		driver.findElement(By.xpath("//*[@id=\"enteredData\"]/thead/tr/th[1]/div[1]/button[1]/span")).click(); //Click on + below "Target"
 		Thread.sleep(3000);
 		
-		driver.findElement(By.xpath("//*[@id=\"enteredData\"]/tbody/tr/td[1]/span/div/div[1]")).click();
-		driver.findElement(By.xpath("//*[@id=\"enteredData\"]/tbody/tr/td[1]/span/div/div[2]/div/div/div[2]/div/div/div")).click();
-				
+		driver.findElement(By.xpath("//*[@id=\"enteredData\"]/tbody/tr/td[1]/span/div/div[1]")).click(); //Click on select target drop-down
+		driver.findElement(By.xpath("//*[@id=\"enteredData\"]/tbody/tr/td[1]/span/div/div[2]/div/div/div[2]/div/div/div")).click(); //Select first target i.e anecdotal
+	
 //		Select tragetDropdown = new Select(driver.findElement(By.xpath("//*[@id=\"enteredData\"]/tbody/tr/td[1]/span/div/div[1]")));
 //		tragetDropdown.selectByIndex(0);
 		Thread.sleep(2000);
-			
-		driver.findElement(By.xpath("//*[@id=\"enteredData\"]/tbody/tr/td[5]/span/span/textarea")).sendKeys("nothing");
-		
+
+		driver.findElement(By.xpath("//*[@id=\"enteredData\"]/tbody/tr/td[5]/span/span/textarea")).sendKeys("Automated Anecdotal Data"); //Fill Anecdotal input box
+		JavascriptExecutor jse = (JavascriptExecutor)driver;
+		jse.executeScript("window.scrollBy(0,250)");		
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//*[@id=\"enteredData\"]/thead/tr/th[1]/div[1]/button[1]/span")).click();
-		driver.findElement(By.xpath("//*[@id=\"enteredData\"]/tbody/tr/td[1]/span/div/div[1]")).click();
-		driver.findElement(By.xpath("//*[@id=\"enteredData\"]/tbody/tr/td[1]/span/div/div[2]/div/div/div[23]/div/div/div")).click();
+		driver.findElement(By.xpath("//*[@id=\"enteredData\"]/thead/tr/th[1]/div[1]/button[1]/span")).click(); //Click on + below "Target"
+		driver.findElement(By.xpath("//*[@id=\"enteredData\"]/tbody/tr/td[1]/span/div/div[1]")).click(); //Click on select target drop-down
+		driver.findElement(By.xpath("//*[@id=\"enteredData\"]/tbody/tr/td[1]/span/div/div[2]/div/div/div[3]/div/div/div")).click();
 		Thread.sleep(3000);
 			
 		Select tragetDropdown = new Select(driver.findElement(By.xpath("//*[@id=\"enteredData\"]/tbody/tr/td[5]/span/span/div/select")));
@@ -63,6 +65,7 @@ public class DataEntry_SkillData extends BaseTest{
  		driver.findElement(By.xpath("//*[@id=\"contentArea\"]/div[1]/form[1]/div[2]/fieldset/div[3]/button[1]")).click();
  		
  		Thread.sleep(2000);
+		jse.executeScript("window.scrollBy(0,-250)");
  		String errorMessage = driver.findElement(By.xpath("//*[@id=\"contentArea\"]/div[1]/form[1]/div[2]/fieldset/div[1]/div/span")).getText();
  		System.out.println(errorMessage);
  			}
