@@ -14,7 +14,7 @@ public class BaseTest {
 	String driverPath = "/Users/sneupane/Documents/work/chromedriver";
 	public String baseUrl = "https://staging.datafinch.com";
 
-	public WebDriver driver ; 
+	public static WebDriver driver ; 
 	public String expected = null;
 	public String actual = null;
 	private boolean acceptNextAlert;

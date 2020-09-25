@@ -19,9 +19,9 @@ public class EverythingYouNeed extends BaseTest{
 	@Test(priority = 0)
 	public void login() throws InterruptedException{
 		driver.findElement(By.id("Username")).clear();
-		driver.findElement(By.id("Username")).sendKeys("p.test");
+		driver.findElement(By.id("Username")).sendKeys("st6.kim");
 		driver.findElement(By.id("Password")).clear();
-		driver.findElement(By.id("Password")).sendKeys("Automate123+");
+		driver.findElement(By.id("Password")).sendKeys("Temp123!");
 		driver.findElement(By.id("Password")).sendKeys(Keys.RETURN);
 		expected = "Catalyst - Student Overview";
 		actual = driver.getTitle();

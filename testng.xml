@@ -8,7 +8,9 @@
   		</run>
   	</groups>
     <classes>
-      <class name="Students.EverythingYouNeed"/>
+      <class name="Students.Login"/>
+      <class name="Students.StudentSelection"/>
+      <class name="Students.SkillsAcquisition"/>
     </classes>
   </test>
 </suite> 
