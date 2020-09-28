@@ -11,8 +11,8 @@ public class StudentSelection extends BaseTest{
 		driver.findElement(By.id("searchfield_chosen")).click();
 		driver.findElement(By.xpath("//li[contains(text(),'Miller, Dior')]")).click();
 		System.out.println("Selecting 'Miller, Dior'...");
-		driver.findElement(By.id("search"));
-		Thread.sleep(2000);
+		driver.findElement(By.id("search")).click();
+		Thread.sleep(3000);
 		String studentselected = driver.findElement(By.xpath("//span[contains(text(),'Miller, Dior')]")).getText();
 		String givenparam = "Miller, Dior";
 		Assert.assertEquals(studentselected,givenparam);

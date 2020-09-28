@@ -1,37 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="4" total="8" passed="4">
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="52041" started-at="2020-09-25T11:24:43 EDT" finished-at="2020-09-25T11:25:35 EDT">
+  <suite name="Suite" duration-ms="11759" started-at="2020-09-28T15:58:07 EDT" finished-at="2020-09-28T15:58:19 EDT">
     <groups>
     </groups>
-    <test name="Test" duration-ms="52041" started-at="2020-09-25T11:24:43 EDT" finished-at="2020-09-25T11:25:35 EDT">
+    <test name="Test" duration-ms="11759" started-at="2020-09-28T15:58:07 EDT" finished-at="2020-09-28T15:58:19 EDT">
       <class name="Students.Login">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Students.Login@57855c9a]" name="launchBrowser" is-config="true" duration-ms="3160" started-at="2020-09-25T11:24:43 EDT" finished-at="2020-09-25T11:24:46 EDT">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Students.Login@22a67b4]" name="launchBrowser" is-config="true" duration-ms="3483" started-at="2020-09-28T15:58:07 EDT" finished-at="2020-09-28T15:58:11 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="login()[pri:0, instance:Students.Login@57855c9a]" name="login" duration-ms="8539" started-at="2020-09-25T11:24:46 EDT" finished-at="2020-09-25T11:24:55 EDT">
+        <test-method status="PASS" signature="login()[pri:0, instance:Students.Login@22a67b4]" name="login" duration-ms="1998" started-at="2020-09-28T15:58:11 EDT" finished-at="2020-09-28T15:58:13 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:Students.Login@57855c9a]" name="terminateBrowser" is-config="true" duration-ms="90" started-at="2020-09-25T11:25:35 EDT" finished-at="2020-09-25T11:25:35 EDT">
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:Students.Login@22a67b4]" name="terminateBrowser" is-config="true" duration-ms="91" started-at="2020-09-28T15:58:19 EDT" finished-at="2020-09-28T15:58:19 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->
       </class> <!-- Students.Login -->
-      <class name="Students.SkillsAcquisition">
-        <test-method status="PASS" signature="addSkills()[pri:2, instance:Students.SkillsAcquisition@3224f60b]" name="addSkills" duration-ms="16945" started-at="2020-09-25T11:24:57 EDT" finished-at="2020-09-25T11:25:14 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addSkills -->
-        <test-method status="PASS" signature="addTarget()[pri:3, instance:Students.SkillsAcquisition@3224f60b]" name="addTarget" duration-ms="21110" started-at="2020-09-25T11:25:14 EDT" finished-at="2020-09-25T11:25:35 EDT">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addTarget -->
-      </class> <!-- Students.SkillsAcquisition -->
       <class name="Students.StudentSelection">
-        <test-method status="PASS" signature="studentselect()[pri:1, instance:Students.StudentSelection@3b084709]" name="studentselect" duration-ms="2166" started-at="2020-09-25T11:24:55 EDT" finished-at="2020-09-25T11:24:57 EDT">
+        <test-method status="PASS" signature="studentselect()[pri:1, instance:Students.StudentSelection@57855c9a]" name="studentselect" duration-ms="6158" started-at="2020-09-28T15:58:13 EDT" finished-at="2020-09-28T15:58:19 EDT">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- studentselect -->
