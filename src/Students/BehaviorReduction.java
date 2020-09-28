@@ -31,14 +31,14 @@ public class BehaviorReduction extends BaseTest{
 		//String behavior = driver.getPageSource();
 		String createdprogramName = "Aggression";
 		Assert.assertEquals(Newprogramname,createdprogramName);
-		System.out.println("Behaviour created sucessfully");
+		System.out.println("Behaviour created sucessfully!");
 		if(driver.getPageSource().contains("Aggression"))
 		{
-			System.out.println("Name is Present");
+			System.out.println("Recently created behavior is present in the grid.");
 		}
 
 		else{
-			System.out.println("Name is not Present");
+			System.out.println("Recently created behavior is not present in the grid.");
 
 		}		
 	}

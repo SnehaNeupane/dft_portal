@@ -93,7 +93,30 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
+<<<<<<< HEAD
                     <span class="method-stats">2 methods,   2 passed</span>
+=======
+                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Students.BehaviorReduction" hash-for-method="behaviourReduction">behaviourReduction</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Students.SkillsAcquisition" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+>>>>>>> master
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,12 +127,31 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Students.SkillsAcquisition" hash-for-method="addSkills">addSkills</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Students.SkillsAcquisition" hash-for-method="addTarget">addTarget</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Students.DataEntry_SkillData" hash-for-method="dataentry">dataentry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Students.Login" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+<<<<<<< HEAD
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Students.StudentSelection" hash-for-method="studentselect">studentselect</a> <!-- method navigator-link -->
+=======
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="Students.DataEntry_Soapnote" hash-for-method="soapNoteEntry">soapNoteEntry</a> <!-- method navigator-link -->
+>>>>>>> master
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -132,9 +174,113 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+<<<<<<< HEAD
                   <a name="studentselect">
                   </a> <!-- studentselect -->
                   <span class="method-name">studentselect</span>
+=======
+                  <a name="login">
+                  </a> <!-- login -->
+                  <span class="method-name">login</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#Username&quot;}
+  (Session info: chrome=85.0.4183.83)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;Snehas-MacBook-Pro.local&apos;, ip: &apos;2601:c6:cb80:830:75a5:e1ef:1fcf:1bb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_265&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /var/folders/lj/nc_01b1115g...}, goog:chromeOptions: {debuggerAddress: localhost:52724}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 85d7bd5f6fcff5c4f15f06a1715f5154
+*** Element info: {Using=id, value=Username}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Students.Login.login(Login.java:28)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Students.BehaviorReduction</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="behaviourReduction">
+                  </a> <!-- behaviourReduction -->
+                  <span class="method-name">behaviourReduction</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;latestTasks&quot;]/tbody/tr[3]/td[1]/b/span&quot;}
+  (Session info: chrome=85.0.4183.83)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;Snehas-MacBook-Pro.local&apos;, ip: &apos;2601:c6:cb80:830:75a5:e1ef:1fcf:1bb5%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;1.8.0_265&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.83, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: /var/folders/lj/nc_01b1115g...}, goog:chromeOptions: {debuggerAddress: localhost:52724}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 85d7bd5f6fcff5c4f15f06a1715f5154
+*** Element info: {Using=xpath, value=//*[@id=&quot;latestTasks&quot;]/tbody/tr[3]/td[1]/b/span}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Students.BehaviorReduction.behaviourReduction(BehaviorReduction.java:30)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Students.DataEntry_Soapnote</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="soapNoteEntry">
+                  </a> <!-- soapNoteEntry -->
+                  <span class="method-name">soapNoteEntry</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Students.SkillsAcquisition</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addSkills">
+                  </a> <!-- addSkills -->
+                  <span class="method-name">addSkills</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="addTarget">
+                  </a> <!-- addTarget -->
+                  <span class="method-name">addTarget</span>
+>>>>>>> master
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -150,6 +296,21 @@
                   <a name="login">
                   </a> <!-- login -->
                   <span class="method-name">login</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Students.DataEntry_SkillData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dataentry">
+                  </a> <!-- dataentry -->
+                  <span class="method-name">dataentry</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -172,7 +333,14 @@
     &lt;/groups&gt;
     &lt;classes&gt;
       &lt;class name=&quot;Students.Login&quot;/&gt;
+<<<<<<< HEAD
       &lt;class name=&quot;Students.StudentSelection&quot;/&gt;
+=======
+      &lt;class name=&quot;Students.SkillsAcquisition&quot;/&gt;
+      &lt;class name=&quot;Students.BehaviorReduction&quot;/&gt;
+      &lt;class name=&quot;Students.DataEntry_SkillData&quot;/&gt;
+      &lt;class name=&quot;Students.DataEntry_Soapnote&quot;/&gt;
+>>>>>>> master
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -186,7 +354,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -212,6 +380,7 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
+<<<<<<< HEAD
 data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'studentselect')
@@ -221,11 +390,46 @@ data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'Students.Login')
 data.setCell(1, 3, 1998);
+=======
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'dataentry')
+data.setCell(0, 2, 'Students.DataEntry_SkillData')
+data.setCell(0, 3, 32006);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'soapNoteEntry')
+data.setCell(1, 2, 'Students.DataEntry_Soapnote')
+data.setCell(1, 3, 22341);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addTarget')
+data.setCell(2, 2, 'Students.SkillsAcquisition')
+data.setCell(2, 3, 21130);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'addSkills')
+data.setCell(3, 2, 'Students.SkillsAcquisition')
+data.setCell(3, 3, 15588);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'behaviourReduction')
+data.setCell(4, 2, 'Students.BehaviorReduction')
+data.setCell(4, 3, 9890);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'login')
+data.setCell(5, 2, 'Students.Login')
+data.setCell(5, 3, 9330);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'login')
+data.setCell(6, 2, 'Students.SkillsAcquisition')
+data.setCell(6, 3, 23);
+>>>>>>> master
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
+<<<<<<< HEAD
               <span class="suite-total-time">Total running time: 8 seconds</span>
+=======
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+>>>>>>> master
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -240,15 +444,46 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+<<<<<<< HEAD
               <span class="ignored-class-name">Students.StudentSelection</span>
+=======
+              <span class="ignored-class-name">Students.DataEntry_Soapnote</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
                 <span class="ignored-method-name">terminateBrowser</span>
                 <br/>
-                <span class="ignored-method-name">launchBrowser</span>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Students.SkillsAcquisition</span>
+>>>>>>> master
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">terminateBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Students.BehaviorReduction</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">terminateBrowser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">Students.DataEntry_SkillData</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setUp</span>
+                <br/>
+                <span class="ignored-method-name">terminateBrowser</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -262,11 +497,12 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">Students.Login</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">launchBrowser</span>
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login</span>
+<<<<<<< HEAD
                 <span class="method-start">3503 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
@@ -275,13 +511,60 @@ return data;
               <div class="test-method">
                 <span class="method-name">studentselect</span>
                 <span class="method-start">5505 ms</span>
+=======
+                <span class="method-start">3406 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Students.SkillsAcquisition</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login</span>
+                <span class="method-start">12740 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addSkills</span>
+                <span class="method-start">12766 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">addTarget</span>
+                <span class="method-start">28356 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Students.BehaviorReduction</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">behaviourReduction</span>
+                <span class="method-start">49487 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Students.DataEntry_SkillData</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dataentry</span>
+                <span class="method-start">59379 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Students.DataEntry_Soapnote</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">soapNoteEntry</span>
+                <span class="method-start">91386 ms</span>
+>>>>>>> master
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">Students.Login</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">terminateBrowser</span>
+<<<<<<< HEAD
                 <span class="method-start">11664 ms</span>
+=======
+                <span class="method-start">113728 ms</span>
+>>>>>>> master
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

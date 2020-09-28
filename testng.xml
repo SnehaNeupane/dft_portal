@@ -10,6 +10,7 @@
     <classes>
       <class name="Students.Login"/>
       <class name="Students.StudentSelection"/>
+
     </classes>
   </test>
 </suite> 

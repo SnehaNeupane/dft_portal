@@ -39,12 +39,13 @@ public class EverythingYouNeed extends BaseTest{
 		d.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//a[@class='add']")));
 		Thread.sleep(3000);
 		driver.findElement(By.xpath("//a[@class='add']")).click();		
-		System.out.println("dwwwwwwww");
+		System.out.println("Clicked on Skill Add.");
 		driver.findElement(By.xpath("(//input[@type='text'])[2]")).click();
 		driver.findElement(By.xpath("(//input[@type='text'])[2]")).clear();
 		driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys("AutomatedSkill");
 		driver.findElement(By.id("page-wrapper-1")).click();
 		Thread.sleep(2000);
+		System.out.println("Skill created: 'AutomatedSkill.'");
 		driver.findElement(By.linkText("AutomatedSkill")).click();
 		//driver.findElement(By.xpath("(//input[@type='text'])[1]")).click();
 		Thread.sleep(3000);
@@ -59,7 +60,7 @@ public class EverythingYouNeed extends BaseTest{
 		String Newprogramname = driver.findElement(By.linkText("Program 1")).getText();
 		String createdprogramName = "Program 1";
 		Assert.assertEquals(Newprogramname,createdprogramName);
-		System.out.println("Program created sucessfully");
+		System.out.println("Program 1 created sucessfully");
 	}
 
 	
@@ -89,6 +90,8 @@ public class EverythingYouNeed extends BaseTest{
 		targetType1.selectByVisibleText("DTT");
 		driver.findElement(By.id("SaveNewTarget")).click();
 		Thread.sleep(2000);
+		System.out.println("Anecdotal-Automated Target created.");
+		System.out.println("DTT Target created.");
 		driver.findElement(By.id("Anecdotal-AutomatedOpenLink")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.id("btnMsgBoxOk")).click();
