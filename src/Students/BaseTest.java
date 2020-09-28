@@ -16,6 +16,7 @@ import org.testng.annotations.BeforeTest;
 public class BaseTest {
 	
 	public String baseUrl = "https://staging.datafinch.com";
+
 	public static WebDriver driver ; 
 	public String expected = null;
 	public String actual = null;

@@ -8,8 +8,15 @@
       </run>
     </groups>
     <classes>
-      <class name="Students.SkillsAcquisition">
+      <class name="Students.StudentSelection">
         <methods>
+<<<<<<< HEAD
+          <include name="terminateBrowser"/>
+          <include name="studentselect"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- Students.StudentSelection -->
+=======
           <include name="setUp"/>
           <include name="terminateBrowser"/>
           <include name="login"/>
@@ -22,6 +29,7 @@
           <include name="terminateBrowser"/>
         </methods>
       </class> <!-- Students.BehaviorReduction -->
+>>>>>>> master
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

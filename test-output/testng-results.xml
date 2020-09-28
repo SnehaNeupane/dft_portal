@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="11759" started-at="2020-09-28T15:58:07 EDT" finished-at="2020-09-28T15:58:19 EDT">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="11759" started-at="2020-09-28T15:58:07 EDT" finished-at="2020-09-28T15:58:19 EDT">
+      <class name="Students.Login">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:Students.Login@22a67b4]" name="launchBrowser" is-config="true" duration-ms="3483" started-at="2020-09-28T15:58:07 EDT" finished-at="2020-09-28T15:58:11 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="login()[pri:0, instance:Students.Login@22a67b4]" name="login" duration-ms="1998" started-at="2020-09-28T15:58:11 EDT" finished-at="2020-09-28T15:58:13 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:Students.Login@22a67b4]" name="terminateBrowser" is-config="true" duration-ms="91" started-at="2020-09-28T15:58:19 EDT" finished-at="2020-09-28T15:58:19 EDT">
+=======
 <testng-results skipped="0" failed="2" ignored="8" total="15" passed="5">
   <reporter-output>
   </reporter-output>
@@ -16,10 +35,19 @@
           </reporter-output>
         </test-method> <!-- login -->
         <test-method status="PASS" signature="terminateBrowser()[pri:0, instance:Students.Login@3b084709]" name="terminateBrowser" is-config="true" duration-ms="87" started-at="2020-09-08T15:04:59 EDT" finished-at="2020-09-08T15:04:59 EDT">
+>>>>>>> master
           <reporter-output>
           </reporter-output>
         </test-method> <!-- terminateBrowser -->
       </class> <!-- Students.Login -->
+<<<<<<< HEAD
+      <class name="Students.StudentSelection">
+        <test-method status="PASS" signature="studentselect()[pri:1, instance:Students.StudentSelection@57855c9a]" name="studentselect" duration-ms="6158" started-at="2020-09-28T15:58:13 EDT" finished-at="2020-09-28T15:58:19 EDT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- studentselect -->
+      </class> <!-- Students.StudentSelection -->
+=======
       <class name="Students.DataEntry_SkillData">
         <test-method status="PASS" signature="dataentry()[pri:4, instance:Students.DataEntry_SkillData@1efed156]" name="dataentry" duration-ms="32006" started-at="2020-09-08T15:04:05 EDT" finished-at="2020-09-08T15:04:37 EDT">
           <reporter-output>
@@ -188,6 +216,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- behaviourReduction -->
       </class> <!-- Students.BehaviorReduction -->
+>>>>>>> master
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

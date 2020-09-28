@@ -9,10 +9,8 @@
   	</groups>
     <classes>
       <class name="Students.Login"/>
-      <class name="Students.SkillsAcquisition"/>
-      <class name="Students.BehaviorReduction"/>
-      <class name="Students.DataEntry_SkillData"/>
-      <class name="Students.DataEntry_Soapnote"/>
+      <class name="Students.StudentSelection"/>
+
     </classes>
   </test>
 </suite> 

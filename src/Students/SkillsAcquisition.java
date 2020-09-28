@@ -1,31 +1,15 @@
 package Students;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.NoAlertPresentException;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SkillsAcquisition extends Login{
 
-		@Test(priority = 1)
+		@Test(priority = 2)
 		public void addSkills() throws InterruptedException {
 			//driver.findElement(By.linkText("SUPPORT")).click() ;
 			WebDriverWait d = new WebDriverWait(driver, 20);
@@ -35,8 +19,12 @@ public class SkillsAcquisition extends Login{
 			d.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//a[@class='add']")));
 			Thread.sleep(3000);
 			driver.findElement(By.xpath("//a[@class='add']")).click();		
+<<<<<<< HEAD
+=======
 			System.out.println("Clicked on Skill Add.");
+>>>>>>> master
 			driver.findElement(By.xpath("(//input[@type='text'])[2]")).click();
+			System.out.println("Add skill input field enabled.");
 			driver.findElement(By.xpath("(//input[@type='text'])[2]")).clear();
 			driver.findElement(By.xpath("(//input[@type='text'])[2]")).sendKeys("AutomatedSkill");
 			driver.findElement(By.id("page-wrapper-1")).click();
@@ -59,7 +47,7 @@ public class SkillsAcquisition extends Login{
 			System.out.println("Program 1 created sucessfully");
 		}
 	//
-		@Test(priority=2)
+		@Test(priority=3)
 		public void addTarget() throws InterruptedException{
 			Thread.sleep(3000);
 			driver.findElement(By.linkText("Program 1")).click();
@@ -67,24 +55,56 @@ public class SkillsAcquisition extends Login{
 			driver.findElement(By.xpath("//*[@id=\"addTargetButton\"]")).click();
 			Thread.sleep(3000);
 			driver.findElement(By.id("TargetName")).clear();
+<<<<<<< HEAD
+			driver.findElement(By.id("TargetName")).sendKeys("Anecdotal");
+			System.out.println("Set Target Name: Anecdotal");
+			driver.findElement(By.id("GoalName")).click();
+			driver.findElement(By.id("GoalName")).clear();
+			driver.findElement(By.id("GoalName")).sendKeys("automatedtest");
+			System.out.println("Set Goal Name: automatedtest");
+=======
 			driver.findElement(By.id("TargetName")).sendKeys("AnecdotalTarget");
 			driver.findElement(By.id("GoalName")).click();
 			driver.findElement(By.id("GoalName")).clear();
 			driver.findElement(By.id("GoalName")).sendKeys("Automated test");
+>>>>>>> master
 			Select targetType = new Select(driver.findElement(By.id("TargetKind")));
 			Thread.sleep(3000);
 			targetType.selectByVisibleText("Anecdotal");
+			System.out.println("Set Target Type: Anecdotal");
 			driver.findElement(By.id("SaveNewTargetAddAnother")).click();
+			System.out.println("Anecdotal target created and adding another Target...");
 			Thread.sleep(3000);
 			driver.findElement(By.id("TargetName")).clear();
+<<<<<<< HEAD
+			driver.findElement(By.id("TargetName")).sendKeys("DTT");
+			System.out.println("Set Target Name: DTT");
+			driver.findElement(By.id("GoalName")).click();
+			driver.findElement(By.id("GoalName")).clear();
+			driver.findElement(By.id("GoalName")).sendKeys("automatedtest");
+			System.out.println("Set Goal Name: automatedtest");
+=======
 			driver.findElement(By.id("TargetName")).sendKeys("DTTTarget");
 			driver.findElement(By.id("GoalName")).click();
 			driver.findElement(By.id("GoalName")).clear();
 			driver.findElement(By.id("GoalName")).sendKeys("Automated test");
+>>>>>>> master
 			Select targetType1 = new Select(driver.findElement(By.id("TargetKind")));
 			targetType1.selectByVisibleText("DTT");
+			System.out.println("Set Target Type: DTT");
 			driver.findElement(By.id("SaveNewTarget")).click();
 			Thread.sleep(2000);
+<<<<<<< HEAD
+			System.out.println("DTT Target created.");
+			driver.findElement(By.id("AnecdotalOpenLink")).click();
+			Thread.sleep(2000);
+			driver.findElement(By.id("btnMsgBoxOk")).click();
+			System.out.println("Anecdotal Target Opened!");
+			driver.findElement(By.id("DTTOpenLink")).click();
+			Thread.sleep(2000);
+			driver.findElement(By.id("btnMsgBoxOk")).click();
+			System.out.println("DTT Target Opened!");		
+=======
 			System.out.println("Anecdotal Target created.");
 			System.out.println("DTT Target created.");
 			driver.findElement(By.id("AnecdotalTargetOpenLink")).click();
@@ -96,5 +116,6 @@ public class SkillsAcquisition extends Login{
 			driver.findElement(By.id("btnMsgBoxOk")).click();
 			System.out.println("DTT Target is opened.");
 			
+>>>>>>> master
 		}		
 	}
